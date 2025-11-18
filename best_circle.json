@@ -1,0 +1,1 @@
+{"n_inputs": 2, "n_outputs": 1, "diff_only": true, "nodes": [{"id": 0, "type": "in", "activation": "id", "bias": 0.0}, {"id": 1, "type": "in", "activation": "id", "bias": 0.0}, {"id": 2, "type": "out", "activation": "tanh", "bias": -0.3751553458837854}], "conns": [{"in_id": 1, "out_id": 2, "weight": 3.003080246718705, "enabled": false, "innov": 1}]}
