@@ -185,8 +185,8 @@ def plot_decision_boundary(ax, genome, X_data_plot, y_data_plot, title):
     ax.set_xlabel("Feature 1")
     ax.set_ylabel("Feature 2")
     ax.grid(True)
-    ax.set_xlim([-2.5, 2.5])
-    ax.set_ylim([-2.5, 2.5])
+    ax.set_xlim([-6, 6])
+    ax.set_ylim([-6, 6])
 
 def plot_live_update(fig, gen, best_genome_for_plot, second_best_genome_for_plot, random_genome_for_plot, 
                      X_data_plot, y_data_plot, best_hist, avg_hist, best_raw_fitness_for_plot):
@@ -350,7 +350,7 @@ if __name__ == "__main__":
     
     print(f"JAX devices: {jax.devices()}")
     
-    X_data_plot, y_data_plot = datasets.make_xor(n=1000, noise=0.1)
+    X_data_plot, y_data_plot = datasets.make_circle(n=1000, noise=0.1)
     
     X_train = jnp.array(X_data_plot, dtype=jnp.float32)
     y_train = jnp.array(y_data_plot, dtype=jnp.float32).reshape(-1, 1)
